@@ -1,0 +1,28 @@
+
+  nav {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4056A1;
+    color: #FFFFFF;
+    width: 100%;
+  }
+  nav>span {
+    margin: 1.5em;
+    font-family: 'Bungee', cursive;
+    font-size:x-large;
+  }
+   nav>p{
+    float: right;
+    margin: 1.5em;
+    font-size: medium;
+   }
+    p>i{
+      padding-left: 5pc;
+
+    }
+  
+
+
+
