@@ -1,0 +1,60 @@
+.new-tweet{
+  display: flex;
+  flex-direction:column;
+  justify-content:space-around;
+  width: 90%;
+  height: 300px;
+  margin: 1.5em;
+  background-color: rgba(250, 235, 215, 0);
+  color: #2c2d31;
+}
+.form{
+  display: flex;
+  margin: 1.5em;
+  justify-content:space-around;
+  flex-direction:column;
+ 
+}
+.form>label{
+  color: rgb(43, 39, 39);
+  font-size: larger;
+
+}
+
+.form>textarea{
+  width: 80%;
+  padding: 10px 10px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 3px solid rgb(63, 36, 112);
+  background-color: rgba(250, 235, 215, 0);
+  ;
+
+  
+}
+
+.ss>button{
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  font-size:large;
+  margin: 1em;
+  float: left;
+
+
+
+}
+.ss>output{
+  font-family: 'Bungee', cursive;
+  float: right;
+  width: 30%;
+  margin: 1em;
+  display: flex;
+  color: #2c2d31;
+}
+
+.new-tweet>h2{
+  display: flex;
+  margin: 1.5em;
+  font-size: xx-large;
+}

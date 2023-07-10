@@ -19,6 +19,16 @@ body {
   background-color: #aabcee;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
+  width: 100%;
+ 
+}
+.container{
+  width: 90%;
+  background-color: #aabcee;
+  display: flex;
+  align-items:center;
+  margin: auto;
+
 
 }
 
