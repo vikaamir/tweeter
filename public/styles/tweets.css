@@ -1,0 +1,17 @@
+.tweet-container{
+  
+}
+
+.userDetails{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.img{
+
+
+}
+.posted-tweets{
+
+
+}
