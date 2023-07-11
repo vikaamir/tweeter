@@ -17,7 +17,7 @@
 }
 
 .form>textarea{
-  width: 90%;
+  width: 100%;
   margin: 4px 0;
   border: none;
   border-bottom: 3px solid rgb(63, 36, 112);
@@ -33,13 +33,16 @@
   font-size:large;
   margin: 1em;
   float: left;
+ 
 
 }
 .ss>output{
   font-family: 'Bungee', cursive;
   float: right;
-  width: 30%;
   margin: 1em;
   display: flex;
   color: #2c2d31;
+  
+
 }
+
