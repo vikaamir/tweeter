@@ -35,14 +35,13 @@ const renderTweets = function (tweets) {
   }
 };
 
-
 $('.form').on('submit', function (event) {
   event.preventDefault(); 
   let data = $(this).serialize();
-  let trimmedData = data.slice(5);
-  if(!trimmedData){
+  let dataHTML = $('#tweet-text').val();
+  if(!dataHTML){// checks if trimmedData falsy
     alert("Your tweet is empty!")
-  } else if(trimmedData.length > 140) {
+  } else if(dataHTML.length > 140) {// check if the tweet not over 140 cha
     alert("Your tweet is too long!")
   } else {
     $.post("/tweets", data)
