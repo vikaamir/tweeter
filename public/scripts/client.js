@@ -39,8 +39,15 @@ const renderTweets = function (tweets) {
 $('.form').on('submit', function (event) {
   event.preventDefault(); 
   let data = $(this).serialize();
-  $.post("/tweets", data)
-    .then(loadTweets());
+  let trimmedData = data.slice(5);
+  if(!trimmedData){
+    alert("Your tweet is empty!")
+  } else if(trimmedData.length > 140) {
+    alert("Your tweet is too long!")
+  } else {
+    $.post("/tweets", data)
+      .then(loadTweets());
+  }
 });
 
 function loadTweets(){
