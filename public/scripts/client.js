@@ -7,13 +7,18 @@
 
 // Test / driver code (temporary). Eventually will get this from the server.
 function createTweetElement(tweet) {
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   const $tweet = $(`
   <article class="tweet">
     <header>
       <h4>  <i class="fa-solid fa-face-smile-wink"></i>${tweet.user.name}</h4>
       <h4 class="ID">${tweet.user.handle}</h4>
     </header>
-    <p>${tweet.content.text}</p>
+    <p>${escape(tweet.content.text)}</p>
     <footer>
       <p1>${timeago.format(tweet.created_at)}</p1>
       <div class="icons">
@@ -31,7 +36,7 @@ const renderTweets = function (tweets) {
   $('#tweets-container').empty();
   for (let tweet of tweets) {// loop tweets 
     const $tweet = createTweetElement(tweet);
-    $('#tweets-container').append($tweet);
+    $('#tweets-container').prepend($tweet);
   }
 };
 
@@ -42,10 +47,15 @@ $('.form').on('submit', function (event) {
   if(!dataHTML){// checks if trimmedData falsy
     alert("Your tweet is empty!")
   } else if(dataHTML.length > 140) {// check if the tweet not over 140 cha
-    alert("Your tweet is too long!")
+    $('#errormess1').show();
   } else {
     $.post("/tweets", data)
-      .then(loadTweets());
+      .then(() => {
+        $('#errormess1').hide();
+        $('#tweet-text').val("")
+        $($('.new-tweet textarea').next().find('.counter')).text(140)
+        loadTweets()
+      });
   }
 });
 
