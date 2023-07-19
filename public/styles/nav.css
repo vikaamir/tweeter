@@ -10,21 +10,23 @@
     color: #FFFFFF;
     width: 100%;
   }
-  nav>span {
+  nav span {
     margin: 1.5em;
     font-family: 'Bungee', cursive;
     font-size:x-large;
   }
-   nav>p{
+   nav p{
     float: right;
     margin: 1.5em;
-    font-size: medium;
+    font-size: 1rem;
    }
-    p>i{
+    p i{
       padding-left: 5pc;
 
     }
-  
 
+    .bolded {
+       font-weight: bold; 
+      }
 
 

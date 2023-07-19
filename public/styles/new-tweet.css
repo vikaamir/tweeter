@@ -11,7 +11,7 @@
 }
 
 .form>label{
-  color: rgb(43, 39, 39);
+  color: rgb(251, 251, 255);
   font-size: larger;
 
 }
@@ -20,7 +20,7 @@
   width: 100%;
   margin: 4px 0;
   border: none;
-  border-bottom: 3px solid rgb(63, 36, 112);
+  border-bottom: 3px solid rgb(99, 36, 112);
   background-color: rgba(250, 235, 215, 0);
   ;
   
@@ -41,14 +41,12 @@
   float: right;
   margin: 1em;
   display: flex;
-  color: #2c2d31;
+  color: #676370;
   
 
 }
-.error {
-  width: 400px;
-	color: #D8000C;
-	background-color: #FFBABA;
+.errormess1 {
+  color: rgb(224, 60, 60);
 
 }
 

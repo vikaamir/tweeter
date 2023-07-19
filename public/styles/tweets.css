@@ -5,13 +5,15 @@
   display: flex;
   flex-direction: column;
   /*box-shadow: 5px 5px #6d6975;*/
-  color: #4e3585;
+  color: #300b61;
+  
 }
 
 article.tweet {
   border-style: solid;
   box-shadow: 5px 5px #6d6975;
   margin-bottom: 1em;
+  background-color: rgba(171, 165, 206, 0.274);
 }
 
 article.tweet header{
@@ -22,7 +24,7 @@ article.tweet header{
 }
 
 article.tweet header > .ID{
-  color: #4e35853b;
+  color: #0000003b;
 }
 
 article.tweet > p{
@@ -36,16 +38,17 @@ article.tweet > footer{
   margin-left: 1.5em;
   margin-right:1.5em;
   border: none;
-  border-top: 3px solid rgb(97, 72, 109);
+  border-top: 3px solid rgb(50, 23, 63);
+ 
 }
 
 article.tweet footer > .icons {
-color: black;
+color: rgb(40, 9, 110);
 size: 20px;
 
 }
 article.tweet footer > .icons > .fa-solid:hover {
-  color: yellow;
+  color: rgb(134, 67, 223);
   
   }
 

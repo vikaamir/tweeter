@@ -41,29 +41,33 @@ const renderTweets = function (tweets) {
 };
 
 $('.form').on('submit', function (event) {
-  event.preventDefault(); 
-  let data = $(this).serialize();
-  let dataHTML = $('#tweet-text').val();
-  if(!dataHTML){// checks if trimmedData falsy
-    alert("Your tweet is empty!")
-  } else if(dataHTML.length > 140) {// check if the tweet not over 140 cha
-    $('#errormess1').show();
-  } else {
-    $.post("/tweets", data)
-      .then(() => {
-        $('#errormess1').hide();
-        $('#tweet-text').val("")
-        $($('.new-tweet textarea').next().find('.counter')).text(140)
-        loadTweets()
-      });
+  event.preventDefault();
+
+  const tweetLength = $('#tweet-text').val().length;
+  if (tweetLength === 0) {
+    return $('.errormess1').text("Cannot submit empty tweet")
   }
+
+  if (tweetLength > 140) {
+    return $('.errormess1').text("Cannot submit tweet too long ")
+  }
+
+  $('.errormess1').text("")
+  const data = $(this).serialize();
+  $.post("/tweets", data)
+    .then(() => {
+      $('#tweet-text').val("")
+      $($('.new-tweet textarea').next().find('.counter')).text(140)
+      loadTweets()
+    });
+
 });
 
-function loadTweets(){
+function loadTweets() {
   $.ajax('/tweets', { method: 'GET' })
-  .then(function (data) {
+    .then(function (data) {
       renderTweets(data);
-  });
+    });
 }
 
 
