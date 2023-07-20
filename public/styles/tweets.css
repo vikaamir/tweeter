@@ -14,6 +14,7 @@ article.tweet {
   box-shadow: 5px 5px #6d6975;
   margin-bottom: 1em;
   background-color: rgba(171, 165, 206, 0.274);
+  border-radius: 30px;
 }
 
 article.tweet header{

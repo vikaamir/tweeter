@@ -3,6 +3,8 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+
 html {
   box-sizing: border-box;
 }
@@ -29,3 +31,37 @@ body {
   align-items:center;
   margin: auto;
 }
+
+@media  only screen and (min-width:1024px){
+  .page{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+    
+    
+  }
+   .container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  
+  }
+
+  .avatar{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    
+  }
+   
+
+ }
+
+
+  
+
+
+
