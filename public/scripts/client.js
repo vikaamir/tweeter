@@ -17,7 +17,8 @@ function createTweetElement(tweet) {
   const $tweet = $(`
   <article class="tweet">
     <header>
-      <h4>${tweet.user.avatars}></i>${tweet.user.name}</h4>
+    <img src='${tweet.user.avatars}'>
+      <h4>${tweet.user.name}</h4>
       <h4 class="ID">${tweet.user.handle}</h4>
     </header>
     <p>${escape(tweet.content.text)}</p>
