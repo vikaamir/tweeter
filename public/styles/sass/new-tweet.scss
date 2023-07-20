@@ -1,0 +1,51 @@
+.container{
+  display: flex;
+  flex-direction:column;
+  
+
+}
+.new-tweet{
+  width: 100%;
+  margin: 1.5em;
+  
+}
+
+.form>label{
+  color: rgb(251, 251, 255);
+  font-size: larger;
+
+}
+
+.form>textarea{
+  width: 100%;
+  margin: 4px 0;
+  border: none;
+  border-bottom: 3px solid rgb(99, 36, 112);
+  background-color: rgba(250, 235, 215, 0);
+  ;
+  
+}
+
+.ss>button{
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  font-size:large;
+  margin: 1em;
+  float: left;
+ 
+
+}
+.ss>output{
+  font-family: 'Bungee', cursive;
+  float: right;
+  margin: 1em;
+  display: flex;
+  color: #676370;
+  
+
+}
+.errormess1 {
+  color: rgb(224, 60, 60);
+
+}

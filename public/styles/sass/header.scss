@@ -1,0 +1,17 @@
+@mixin avatar($avatar:464fb6){
+  height: 400px;
+  width: 100%;
+  background-color: $avatar;
+background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+}
+.image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.username{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

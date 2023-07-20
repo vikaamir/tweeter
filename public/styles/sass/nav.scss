@@ -1,0 +1,29 @@
+nav {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c2268;
+    background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+    
+    color: red;
+    width: 100%;
+  }
+  nav span {
+    margin: 1.5em;
+    font-family: 'Bungee', cursive;
+    font-size:x-large;
+  }
+   nav p{
+    float: right;
+    margin: 1.5em;
+    font-size: 1rem;
+   }
+    p i{
+      padding-left: 5pc;
+
+    }
+
+    .bolded {
+       font-weight: bold; 
+      }
