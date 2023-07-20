@@ -1,5 +1,5 @@
 # Tweeter Project
-a social netWork where you can share your tweets with friends
+a social netWork Ajax based that uses LWuer html5 SASS and css3 where you can share your tweets with friends
 
 !["tweeter1"](./public/images/tweeter1.png)
 !["tweeter1"](./public/images/tweeter2.png)
