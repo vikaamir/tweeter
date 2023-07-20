@@ -1,8 +1,8 @@
 # Tweeter Project
-!["tweeter1"](./images/tweeter1.png)
-!["page2"](./images/tweeter2.png)
-!["page3"](./images/tweeter3.png)
-!["page4"](./images/tweeter4.png)
+!["tweeter1"](./public/images/tweeter1.png)
+!["tweeter1"](./public/images/tweeter2.png)
+!["tweeter1"](./public/images/tweeter3.png)
+!["tweeter1"](./public/images/tweeter4.png)
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
