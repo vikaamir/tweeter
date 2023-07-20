@@ -1,5 +1,5 @@
 # Tweeter Project
-!["page1"](./images/tweeter1.png)
+!["tweeter1"](./images/tweeter1.png)
 !["page2"](./images/tweeter2.png)
 !["page3"](./images/tweeter3.png)
 !["page4"](./images/tweeter4.png)
