@@ -12,10 +12,12 @@ function createTweetElement(tweet) {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+
+  // using string literals to add data
   const $tweet = $(`
   <article class="tweet">
     <header>
-      <h4>  <i class="fa-solid fa-face-smile-wink"></i>${tweet.user.name}</h4>
+      <h4>${tweet.user.avatars}></i>${tweet.user.name}</h4>
       <h4 class="ID">${tweet.user.handle}</h4>
     </header>
     <p>${escape(tweet.content.text)}</p>
@@ -33,6 +35,7 @@ function createTweetElement(tweet) {
 };
 
 const renderTweets = function (tweets) {
+  //empty the contaneir befor add new tweet
   $('#tweets-container').empty();
   for (let tweet of tweets) {// loop tweets 
     const $tweet = createTweetElement(tweet);
@@ -42,21 +45,19 @@ const renderTweets = function (tweets) {
 
 $('.form').on('submit', function (event) {
   event.preventDefault();
-
+//add conditiond for submit can not submit id empty or over 140 char & display message for each condtion 
   const tweetLength = $('#tweet-text').val().length;
   if (tweetLength === 0) {
     return $('.errormess1').text("Cannot submit empty tweet")
   }
-
   if (tweetLength > 140) {
     return $('.errormess1').text("Cannot submit tweet too long ")
   }
-
   $('.errormess1').text("")
   const data = $(this).serialize();
   $.post("/tweets", data)
     .then(() => {
-      $('#tweet-text').val("")
+      $('#tweet-text').val("");
       $($('.new-tweet textarea').next().find('.counter')).text(140)
       loadTweets()
     });
@@ -64,7 +65,7 @@ $('.form').on('submit', function (event) {
 });
 
 function loadTweets() {
-  $.ajax('/tweets', { method: 'GET' })
+  $.ajax('/tweets', { method: 'GET' })//ajax refresh the page auto
     .then(function (data) {
       renderTweets(data);
     });
