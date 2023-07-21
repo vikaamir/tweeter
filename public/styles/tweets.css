@@ -8,14 +8,17 @@
   color: #300b61;
   
 }
+.tweets-container:hover > article:hover{
+  box-shadow: 5px 5px #6d6975;
+}
 
 article.tweet {
   border-style: solid;
-  box-shadow: 5px 5px #6d6975;
   margin-bottom: 1em;
   background-color: rgba(171, 165, 206, 0.274);
   border-radius: 30px;
 }
+
 
 article.tweet header{
   width: 350px;

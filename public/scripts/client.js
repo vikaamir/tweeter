@@ -47,7 +47,7 @@ const renderTweets = function (tweets) {
 $('.form').on('submit', function (event) {
   event.preventDefault();
 //add conditiond for submit can not submit id empty or over 140 char & display message for each condtion 
-  const tweetLength = $('#tweet-text').val().length;
+  const tweetLength = $('#tweet-text').val().trim().length;
   if (tweetLength === 0) {
     return $('.errormess1').text("Cannot submit empty tweet")
   }
@@ -64,12 +64,18 @@ $('.form').on('submit', function (event) {
     });
 
 });
-
 function loadTweets() {
-  $.ajax('/tweets', { method: 'GET' })//ajax refresh the page auto
-    .then(function (data) {
-      renderTweets(data);
-    });
+  $.ajax({
+    url: '/tweets',
+    type: 'GET',
+    dataType: 'json',
+    success: function(data) {
+      renderTweets(data)
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      console.log('Error:', textStatus, errorThrown);
+    }
+  });
 }
 
 
