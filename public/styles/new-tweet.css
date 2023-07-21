@@ -23,6 +23,7 @@
   border: none;
   border-bottom: 3px solid rgb(99, 36, 112);
   background-color: rgba(250, 235, 215, 0);
+  word-wrap: break-word;
   ;
   
 }
