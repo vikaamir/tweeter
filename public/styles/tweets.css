@@ -6,8 +6,8 @@
   flex-direction: column;
   /*box-shadow: 5px 5px #6d6975;*/
   color: #300b61;
-  
 }
+
 .tweets-container:hover > article:hover{
   box-shadow: 5px 5px #6d6975;
 }
@@ -19,15 +19,12 @@ article.tweet {
   border-radius: 30px;
 }
 
-
 article.tweet header{
   width: 350px;
   height: 75px;
   margin: 1.5em;
   display: inline-flex;
- 
 }
-
 
 article.tweet header > .ID{
   float: right;
