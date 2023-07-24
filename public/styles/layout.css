@@ -25,9 +25,7 @@ body {
  
 }
 .container{
-  width: 90%;
   background-color: #aabcee;
-  display: flex;
   align-items:center;
   margin: auto;
 }
@@ -41,9 +39,9 @@ body {
   }
 
    .container{
-    width: 60%;
     display: flex;
-    justify-content: center;
+    flex-direction:column;
+    width: 70%;
   }
 
   .avatar{
@@ -53,9 +51,8 @@ body {
     margin: 20px;
     width: 400px !important;
   }
- }
 
-
+}
   
 
 
