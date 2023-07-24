@@ -1,7 +1,13 @@
+
+.user{
+display: flex;
+}
+
 .avatar{
   height: 400px;
   background-color: #4056A1 ;
 background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+
 }
 
 .image{
